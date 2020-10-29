@@ -1,0 +1,6 @@
+@import "style_print.css" print;
+body {
+      font-family: sans-serif;
+      font-size: 14px;
+      background-color: #eee;
+      }  

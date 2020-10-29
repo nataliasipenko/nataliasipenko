@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<HTML lang="en"> 
+    <HEAD>
+        <META charset="utf-8">
+        <TITLE>Пример страницы</TITLE>
+        <style >
+
+        .flex-footer{
+            clear: both;
+            background-color:chocolate;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            flex-wrap: wrap;
+        }
+        .flex-container {
+            /*генерирует flex-контейнер уровня блока*/
+            background-color: burlywood;
+            margin-bottom: .2em;
+            width:auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            flex-wrap: wrap;
+            }
+        .navigation{
+            width: 15em;
+            background-color:aquamarine; 
+            float: left;   
+            }
+        .image{
+
+            width: 200px;
+            height: auto;
+            align-self: right;
+        }
+        </style>
+    </HEAD>  
+    <BODY> 
+        <div class="navigation">
+            <h3>Блок навигации</h3>
+            <ul>
+                <li>Ширина 15 em</li>
+                <li>Должен присутствовать цвет фона</li>
+                <li>Располагается слева</li>
+                <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
+            </ul>
+        </div>
+        <div class="flex-container">
+            <h3>Статья 1</h3><br>
+            Размер блока: <br>
+            Занимает всю доступную ширину<br>
+            Должен присутствовать цвет фона<br>
+            Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom 
+        </div>
+        <div class="flex-container" style="height: 400px; margin-left: 15em;">
+            <h3>Статья 2</h3><br>
+            Размер блока: <br>
+            Занимает всю доступную ширину<br>
+            Должен присутствовать цвет фона<br>
+            Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom. 
+            Картинка вставлена при помощи тега, плавание организовано по правому краю внутри данной статьи для этой картинки <br>
+            <div style="align-self: flex-end;"><img src="folder/im.png" alt="img" class="image"></div>
+        </div>
+        <div class="flex-footer">
+            Нижний блок, подвал. Занимает всюдоступную ширину. Высота определяется помещенным внутрь контентом.
+        </div>
+    </BODY> 
+</HTML> ​
